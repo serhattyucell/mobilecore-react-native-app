@@ -1,22 +1,28 @@
 import { StyleSheet } from 'react-native';
+
 import { appColors } from '../../../theme/colors';
+import { radius } from '../../../theme/radius';
+import { shadows } from '../../../theme/shadows';
+import { spacing } from '../../../theme/spacing';
+import { typography } from '../../../theme/typography';
 
 export const profilePageStyles = StyleSheet.create({
   card: {
     backgroundColor: appColors.card,
     borderColor: appColors.border,
-    borderRadius: 14,
+    borderRadius: radius.lg,
     borderWidth: 1,
-    padding: 16,
+    padding: spacing.md,
+    ...shadows.card,
   },
   heading: {
     color: appColors.text,
-    fontSize: 22,
-    fontWeight: '700',
+    fontSize: typography.fontSize.xl,
+    fontWeight: typography.fontWeight.bold,
   },
   content: {
     color: appColors.mutedText,
-    fontSize: 14,
-    marginTop: 8,
+    fontSize: typography.fontSize.md,
+    marginTop: spacing.xs,
   },
 });

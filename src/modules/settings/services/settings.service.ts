@@ -1,14 +1,15 @@
+import { i18n } from '../../../common/i18n/i18n.config';
 import { SettingItem } from '../interfaces/settings.interfaces';
 
 export function getSettingItems(): SettingItem[] {
   return [
     {
-      title: 'Tema',
-      description: 'Uygulama varsayılan olarak açık temada çalışır.',
+      title: i18n.t('settings.themeTitle'),
+      description: i18n.t('settings.themeDescription'),
     },
     {
-      title: 'Mimari',
-      description: 'Modüller bağımsızdır ve kolayca genişletilebilir.',
+      title: i18n.t('settings.architectureTitle'),
+      description: i18n.t('settings.architectureDescription'),
     },
   ];
 }

@@ -1,7 +1,9 @@
 import { PropsWithChildren } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { appColors } from '../../theme/colors';
+import { spacing } from '../../theme/spacing';
 
 export function AppScreen({ children }: PropsWithChildren) {
   return (
@@ -18,7 +20,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 20,
+    paddingHorizontal: spacing.md,
+    paddingTop: spacing.lg,
   },
 });

@@ -1,4 +1,5 @@
 import { Theme } from '@react-navigation/native';
+
 import { appColors } from './colors';
 
 export const appNavigationTheme: Theme = {

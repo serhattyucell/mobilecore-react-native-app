@@ -1,6 +1,7 @@
 import { Text, View } from 'react-native';
-import { homePageStyles } from '../styles/home-page.styles';
+
 import { HomeSummary } from '../interfaces/home.interfaces';
+import { homePageStyles } from '../styles/home-page.styles';
 
 interface HomeSummaryCardProps {
   summary: HomeSummary;
